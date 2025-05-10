@@ -1,10 +1,10 @@
-import './App.css'
-import NavBar from './NavBar'
 function App() {
 
   return (
     <>
-      <NavBar />
+      <h2>
+        hi this is Mihir
+      </h2>
     </>
   )
 }
