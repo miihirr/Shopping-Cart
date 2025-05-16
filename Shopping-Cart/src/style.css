@@ -174,23 +174,13 @@
 
 .ShopNowBtn{
   position: absolute;  
-  bottom: 20px;       
+  bottom: 2rem;       
   left: 50%;          
   transform: translateX(-50%);
   font-size: 2rem;
-  border: 10px solid rgba(0, 0, 0, 0.737);
+  border: 3px solid rgba(0, 0, 0, 0.737);
   border-radius: 20rem;
   padding: 0 2rem;
 }
 
-.search-btn:hover{
-  position: absolute;  
-  bottom: 20px;       
-  left: 50%;          
-  transform: translateX(-50%);
-  font-size: 2rem;
-  border: 10px solid rgba(0, 0, 0, 0.737);
-  border-radius: 20rem;
-  padding: 0 2rem;
-}
 
