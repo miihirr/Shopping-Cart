@@ -4,7 +4,7 @@ function Home(){
 
     return(<>
     <div className="imgContainer">
-        <Link to="./shop">
+        <Link to="../shop">
         <button className="ShopNowBtn btn btn-danger">Click Here To Shop Now!</button>
         </Link>
     </div>
@@ -12,4 +12,5 @@ function Home(){
     </>);
 }
 export default Home;
+
 
