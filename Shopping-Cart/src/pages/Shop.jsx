@@ -11,7 +11,19 @@ function Shop({cart, setCart}) {
   }, []);
 
   const addToCart=(product)=>{
-    setCart((prevCart) => [...prevCart,{...product,"quantity":0}])
+    let index= cart.findIndex(item=>item.id===product.id)
+
+    if(index!=-1){
+      setCart((prevCart) => {
+        let arr = [...prevCart]
+        arr[index]={...arr[index],"quantity":arr[index].quantity+1}
+        return arr
+      })
+    }
+    else{
+      setCart((prevCart) => [...prevCart,{...product,"quantity":1}])
+    }
+    
 
     console.log(cart);
 

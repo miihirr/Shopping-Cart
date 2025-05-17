@@ -10,9 +10,10 @@ import { useState } from "react"
 function App() {
   const [cart,setCart] = useState([]);
 
+  let sum = cart.reduce((sum,item)=>item.quantity+sum,0)
   return (
     <>
-      <NavBar cartItemCount={cart.length} />
+      <NavBar cartItemCount={sum} />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -27,5 +28,7 @@ function App() {
 }
 
 export default App;
+
+
 
 
