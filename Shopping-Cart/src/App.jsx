@@ -5,17 +5,19 @@ import Home from "./pages/Home"
 import Shop from "./pages/Shop"
 import NavBar from "./components/NavBar"
 import Cart from "./pages/Cart"
+import { useState } from "react"
 
 function App() {
+  const [cart,setCart] = useState([]);
 
   return (
     <>
-      <NavBar />
+      <NavBar cartItemCount={cart.length} />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/shop" element={<Shop />}></Route>
+          <Route path="/shop" element={<Shop cart={cart} setCart={setCart}/>}></Route>
           <Route path="/cart" element={<Cart />}></Route>
         </Routes>
 
@@ -24,5 +26,6 @@ function App() {
   )
 }
 
-export default App
+export default App;
+
 

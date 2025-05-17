@@ -2,8 +2,7 @@ import { Container, Nav, Navbar as NavbarBs, Form, FormControl, Button } from "r
 import { NavLink } from "react-router-dom";
 import { FaSearch, FaShoppingCart } from 'react-icons/fa';
 
-function NavBar() {
-  const cartItemCount = 5; 
+function NavBar({cartItemCount}) {
 
   return (
     <>

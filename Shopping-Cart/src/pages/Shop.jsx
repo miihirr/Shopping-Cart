@@ -1,14 +1,22 @@
 import { useEffect, useState } from "react";
 
-
-function Shop() {
+function Shop({cart, setCart}) {
   const [arr, setArr] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
-      .then((data) => setArr(data));
+      .then((data) => setArr(data))
+      .catch((error)=> alert(error));
   }, []);
+
+  const addToCart=(product)=>{
+    setCart((prevCart) => [...prevCart,{...product,"quantity":0}])
+
+    console.log(cart);
+
+    
+  }
 
   return (
     <div className="container mt-4">
@@ -29,7 +37,7 @@ function Shop() {
                 </p>
                 <div className="mt-auto d-flex gap-3 justify-content-between">
                   <p className="fw-bold mb-2">${obj.price.toFixed(2)}</p>
-                  <button className="addCartBtn">Add to Cart</button>
+                  <button className="addCartBtn" onClick={()=>addToCart(obj)}>Add to Cart</button>
                 </div>
               </div>
             </div>
