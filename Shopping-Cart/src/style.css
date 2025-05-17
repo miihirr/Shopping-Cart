@@ -215,3 +215,29 @@
 .extra{
   font-size: 1.2rem;
 }
+
+.cartContainer{
+  margin: .3rem;
+  padding: .3rem;
+}
+
+.item-img{
+  height: 5rem;
+  width: 5rem;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.parent-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+
