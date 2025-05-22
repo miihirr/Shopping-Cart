@@ -224,6 +224,7 @@
 .item-img{
   height: 5rem;
   width: 5rem;
+  margin-left: 2rem;
 }
 
 .flex{
@@ -243,5 +244,8 @@
 
 
 
-
-
+.fDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

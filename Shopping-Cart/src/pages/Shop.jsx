@@ -24,9 +24,6 @@ function Shop({cart, setCart}) {
       setCart((prevCart) => [...prevCart,{...product,"quantity":1}])
     }
     
-
-    console.log(cart);
-
     
   }
 
