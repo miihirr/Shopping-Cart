@@ -24,7 +24,6 @@ function NavBar({ cartItemCount }) {
   };
 
   return (
-    <>
       <NavbarBs sticky="top" className="navbar-custom">
         <Container>
           <Nav className="me-auto">
@@ -72,7 +71,6 @@ function NavBar({ cartItemCount }) {
           </Nav>
         </Container>
       </NavbarBs>
-    </>
   );
 }
 
